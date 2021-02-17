@@ -6,11 +6,13 @@ import { AppComponent } from './app.component';
 import { LandingMainComponent } from './components/landing-main/landing-main.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './material/material.module';
+import { RestaurantCardComponent } from './components/restaurant-card/restaurant-card.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    LandingMainComponent
+    LandingMainComponent,
+    RestaurantCardComponent
   ],
   imports: [
     BrowserModule,

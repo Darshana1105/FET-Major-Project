@@ -4,7 +4,7 @@
     <span class="navbar-brand mb-0 h1">Navbar</span>
   </nav>
   <div class="inner">
-    <div id="carouselExampleControls" class="carousel-container carousel slide" data-ride="carousel"
+    <div id="offers-carousel" class="carousel-container carousel slide" data-ride="carousel"
       data-interval="10000">
       <div class="carousel-inner">
         <div class="carousel-item active">
@@ -17,11 +17,11 @@
           <img class="d-block w-100 carousel-image " src="../../../assets/images/carousel3.jpg" alt="Third slide">
         </div>
       </div>
-      <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+      <a class="carousel-control-prev" href="#offers-carousel" role="button" data-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         <span class="sr-only">Previous</span>
       </a>
-      <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+      <a class="carousel-control-next" href="#offers-carousel" role="button" data-slide="next">
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="sr-only">Next</span>
       </a>
@@ -36,91 +36,35 @@
             <ol class="carousel-indicators">
               <li data-target="#recipeCarousel" data-slide-to="0" class="active"></li>
               <li data-target="#recipeCarousel" data-slide-to="1"></li>
-              <!-- <li data-target="#carouselExampleIndicators" data-slide-to="2"></li> -->
             </ol>
-            <div class="carousel-inner w-100 text-left" role="listbox">
+            <div class="carousel-inner w-100 text-left mt-5" role="listbox">
               <div class="carousel-item active  ">
-                <div class="restaurant-carousel-item row  ">
-                  <mat-card class="restaurant-card col-md-3 col-sm-5 shadow ">
-                    <img mat-card-image src="../../../assets/images/pizza.jpg" alt="Photo of a Shiba Inu">
-                    <mat-card-content>
+                <div class="restaurant-carousel-item row   ">
+                  <button mat-button class="card-clickable col-md-3 col-sm-5 mb-3 " >
+                  <mat-card class="restaurant-card shadow text-left ">
+                      <img mat-card-image src="../../../assets/images/pizza.jpg" alt="Photo of a Shiba Inu">
+                      <mat-card-content>
 
-                      <h2 class="mb-0">Restaurant 1</h2>
-                      <mat-card-subtitle>
-                        <div class="d-flex justify-content-between">
-                        <div class="d-flex">
-                          
-                          <mat-icon aria-hidden="false" class="text-white bg-warning">star</mat-icon>
-                          <h3 class="rating ml-1 mb-0"><strong>4.5 </strong> (79)</h3>
-                        </div>
-                          <div class="pt-1">
-                            <mat-card-subtitle class="mb-0">Sargasan</mat-card-subtitle>
-                          </div>
-                        </div>
-                        <div>
-                          <mat-card-subtitle class="mb-0 text-wrap overflow-hidden">Italian, Pizza, Cheese, sdfsa,sdfassdfsfd f,sdfasf...s</mat-card-subtitle>
-                        </div>
-                      </mat-card-subtitle>
-                    </mat-card-content>
-                  </mat-card>
-                  <mat-card class="restaurant-card col-md-3 col-sm-5 shadow ">
-                    <img mat-card-image src="../../../assets/images/pizza.jpg" alt="Photo of a Shiba Inu">
-                    <mat-card-content>
+                        <h1 >Restaurant 1</h1>
+                        <mat-card-subtitle>
+                          <div class="d-flex justify-content-between">
+                            <div class="d-flex">
 
-                      <mat-card-title>Restaurant 2</mat-card-title>
-                      <mat-card-subtitle>
-                        <div class="d-flex justify-content-between">
-                          <div class="d-flex">
-
-                            <mat-icon aria-hidden="false" class="text-white bg-warning">star</mat-icon>
-                          <h3 class="rating ml-1"><strong>4.5</strong> (70)</h3>
+                              <mat-icon aria-hidden="false" class="text-white bg-warning">star</mat-icon>
+                              <h3 class="rating ml-1"><strong>4.5 </strong> (79)</h3>
+                            </div>
+                            <div class="pt-1">
+                              <mat-card-subtitle class="">Sargasan</mat-card-subtitle>
+                            </div>
                           </div>
                           <div>
-                            <h4>description</h4>
+                            <mat-card-subtitle class=" text-wrap overflow-hidden">Italian, Pizza, Cheese,
+                              sdfsa,sdfassdfsfd f,sdfasf...s</mat-card-subtitle>
                           </div>
-                        </div>
-                      </mat-card-subtitle>
-                    </mat-card-content>
-                  </mat-card>
-                  <mat-card class="restaurant-card col-md-3 col-sm-5 shadow ">
-                    <img mat-card-image src="../../../assets/images/pizza.jpg" alt="Photo of a Shiba Inu">
-                    <mat-card-content>
-
-                      <mat-card-title>Restaurant 3</mat-card-title>
-                      <mat-card-subtitle>
-                        <div class="d-flex justify-content-between">
-                        <div class="d-flex">
-                          <mat-icon aria-hidden="false" class="text-white bg-warning">star</mat-icon>
-                          <h3 class="rating ml-1"><strong>4.5 (237)</strong></h3>
-                        </div>
-                          <div>
-                            <h4>description</h4>
-                          </div>
-                        </div>
-                        
-                      </mat-card-subtitle>
-                    </mat-card-content>
-                  </mat-card>
-                  <!-- <mat-card class="restaurant-card col-md-3 col-sm-5 shadow ">
-                    <img mat-card-image src="../../../assets/images/pizza.jpg" alt="Photo of a Shiba Inu">
-                    <mat-card-content>
-
-                      <mat-card-title>Restaurant 2</mat-card-title>
-                      <mat-card-subtitle>Ratings</mat-card-subtitle>
-                      <mat-card-subtitle>Location</mat-card-subtitle>
-                      <mat-card-subtitle>Food Categories</mat-card-subtitle>
-                    </mat-card-content>
-                  </mat-card>
-                  <mat-card class="restaurant-card col-md-3 col-sm-5 shadow ">
-                    <img mat-card-image src="../../../assets/images/pizza.jpg" alt="Photo of a Shiba Inu">
-                    <mat-card-content>
-
-                      <mat-card-title>Restaurant 3</mat-card-title>
-                      <mat-card-subtitle>Ratings</mat-card-subtitle>
-                      <mat-card-subtitle>Location</mat-card-subtitle>
-                      <mat-card-subtitle>Food Categories</mat-card-subtitle>
-                    </mat-card-content>
-                  </mat-card> -->
+                        </mat-card-subtitle>
+                      </mat-card-content>
+                    </mat-card>
+                  </button>
                 </div>
               </div>
               <div class="carousel-item   ">
@@ -129,34 +73,49 @@
                     <img mat-card-image src="../../../assets/images/pizza.jpg" alt="Photo of a Shiba Inu">
                     <mat-card-content>
 
-                      <mat-card-title>Restaurant 4</mat-card-title>
-                      <!-- <mat-card-footer> -->
-                      <mat-card-subtitle>Ratings</mat-card-subtitle>
-                      <mat-card-subtitle>Location</mat-card-subtitle>
-                      <mat-card-subtitle>Food Categories</mat-card-subtitle>
-                      <!-- </mat-card-footer> -->
+                      <h2 class="mb-0">Restaurant 1</h2>
+                      <mat-card-subtitle>
+                        <div class="d-flex justify-content-between">
+                          <div class="d-flex">
+
+                            <mat-icon aria-hidden="false" class="text-white bg-warning">star</mat-icon>
+                            <h3 class="rating ml-1 mb-0"><strong>4.5 </strong> (79)</h3>
+                          </div>
+                          <div class="pt-1">
+                            <mat-card-subtitle class="mb-0">Sargasan</mat-card-subtitle>
+                          </div>
+                        </div>
+                        <div>
+                          <mat-card-subtitle class="mb-0 text-wrap overflow-hidden">Italian, Pizza, Cheese,
+                            sdfsa,sdfassdfsfd f,sdfasf...s</mat-card-subtitle>
+                        </div>
+                      </mat-card-subtitle>
                     </mat-card-content>
                   </mat-card>
                   <mat-card class="restaurant-card col-md-3 col-sm-5 shadow ">
                     <img mat-card-image src="../../../assets/images/pizza.jpg" alt="Photo of a Shiba Inu">
                     <mat-card-content>
 
-                      <mat-card-title>Restaurant 5</mat-card-title>
-                      <mat-card-subtitle>Ratings</mat-card-subtitle>
-                      <mat-card-subtitle>Location</mat-card-subtitle>
-                      <mat-card-subtitle>Food Categories</mat-card-subtitle>
+                      <h2 class="mb-0">Restaurant 1</h2>
+                      <mat-card-subtitle>
+                        <div class="d-flex justify-content-between">
+                          <div class="d-flex">
+
+                            <mat-icon aria-hidden="false" class="text-white bg-warning">star</mat-icon>
+                            <h3 class="rating ml-1 mb-0"><strong>4.5 </strong> (79)</h3>
+                          </div>
+                          <div class="pt-1">
+                            <mat-card-subtitle class="mb-0">Sargasan</mat-card-subtitle>
+                          </div>
+                        </div>
+                        <div>
+                          <mat-card-subtitle class="mb-0 text-wrap overflow-hidden">Italian, Pizza, Cheese,
+                            sdfsa,sdfassdfsfd f,sdfasf...s</mat-card-subtitle>
+                        </div>
+                      </mat-card-subtitle>
                     </mat-card-content>
                   </mat-card>
-                  <!-- <mat-card class="restaurant-card col-md-3 col-sm-5 shadow ">
-                    <img mat-card-image src="../../../assets/images/pizza.jpg" alt="Photo of a Shiba Inu">
-                    <mat-card-content>
 
-                      <mat-card-title>Restaurant 3</mat-card-title>
-                      <mat-card-subtitle>Ratings</mat-card-subtitle>
-                      <mat-card-subtitle>Location</mat-card-subtitle>
-                      <mat-card-subtitle>Food Categories</mat-card-subtitle>
-                    </mat-card-content>
-                  </mat-card> -->
                 </div>
               </div>
 
@@ -176,11 +135,11 @@
 
 
     </div>
-    <div class="jumbotron text-center bg-transparent">
+    <div class="jumbotron text-center top-dishes">
       <h1 class="display-4 text-uppercase">Top 5 Dishes!</h1>
-      <hr class="my-4">
+      <hr class="my-4 text">
       <div class="middle-container row justify-content-center">
-        <mat-card class="example-card shadow">
+        <mat-card class="example-card shadow dish-image">
           <img mat-card-image src="../../../assets/images/pizza.jpg" alt="Photo of a Shiba Inu">
           <mat-card-content>
 
@@ -190,7 +149,7 @@
           </mat-card-content>
         </mat-card>
 
-        <mat-card class="example-card shadow">
+        <mat-card class="example-card shadow dish-image">
           <img mat-card-image src="../../../assets/images/pizza.jpg" alt="Photo of a Shiba Inu">
           <mat-card-content>
 
@@ -200,7 +159,7 @@
           </mat-card-content>
         </mat-card>
 
-        <mat-card class="example-card shadow">
+        <mat-card class="example-card shadow dish-image">
           <img mat-card-image src="../../../assets/images/pizza.jpg" alt="Photo of a Shiba Inu">
           <mat-card-content>
 

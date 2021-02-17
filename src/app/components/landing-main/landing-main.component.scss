@@ -1,7 +1,7 @@
 .container-fluid{
-    background-color: whitesmoke;
+    // background-color: whitesmoke;
     // height: 100vh;
-    max-width: 1300px;
+    // max-width: 1300px;
     position: relative;
     
 }
@@ -25,6 +25,10 @@
 .inner{
   position: relative;
   top: -100px;
+  background-color: transparent;
+// background: rgba(255,255,255,1) url("/assets/images/fast_food-02-.jpg")  ;
+background-size: contain;
+
 }
   .carousel-image{
     height: 50vh;
@@ -35,26 +39,34 @@
 .inner-jumbotron{
     color: rgb(244,67,54,0.8);
     //  background: rgba(0,0,255,0.8)  ;
+    background: transparent;
     background-size: contain;
-    
-}
+    max-width: 1400px;
+    margin: auto;
+    min-height: 100vh;
+  }
 
 .top-restaurants{
-      background-color: rgba(255, 255, 255, 0.9);
+      // background-color: rgba(255, 255, 255, 0.9);
+      background: transparent;
       min-width: inherit;
       min-height: inherit;
 }
 
-.restaurant-card {
-  max-width: 300px;
-  margin: 1.4rem;
+.card-clickable{
+  padding: 0;
+  line-height: initial;
+  font-weight: initial;
+}
 
-  // border-radius: 10px;
+.restaurant-card {
+  // max-width: 350px;
+  height: 50vh;
 }
 
 .restaurant-card img{
-  height: 30vw;
-  max-height: 250px;
+  height: 34vh;
+  // max-height: 250px;
   object-fit: cover;
 }
 
@@ -93,9 +105,23 @@ ol.carousel-indicators > li{
     background-image: url("../../../assets/images/pizza.jpg");
 }
 
+.top-dishes{
+  background-color: rgb(233, 92, 82);
+  color: white;
+}
+
 .example-card {
     max-width: 300px;
     margin: 3rem;
     // border-radius: 10px;
    
+  }
+
+  .dish-image{
+    box-shadow: black;
+  }
+
+  .text{
+    background-color: white;
+    border-width: thin;
   }
