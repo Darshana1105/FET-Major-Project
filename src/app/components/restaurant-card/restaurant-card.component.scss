@@ -1,0 +1,19 @@
+.card-clickable{
+    padding: 0;
+    line-height: initial;
+    font-weight: initial;
+  }
+  .restaurant-card {
+    // max-width: 350px;
+    height: 50vh;
+  }
+  
+  .restaurant-card img{
+    height: 34vh;
+    // max-height: 250px;
+    object-fit: cover;
+  }
+  
+.rating{
+  color:orangered;
+}
