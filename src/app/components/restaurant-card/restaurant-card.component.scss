@@ -5,7 +5,9 @@
   }
   .restaurant-card {
     // max-width: 350px;
-    height: 50vh;
+    min-height: max-content;
+    height: 53vh;
+    overflow: hidden;
   }
   
   .restaurant-card img{

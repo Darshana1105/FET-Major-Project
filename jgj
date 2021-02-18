@@ -1,0 +1,16 @@
+user
+nav > search 
+
+filter :
+    switch :veg,non veg
+
+
+
+
+
+
+
+
+extras :
+
+    restraurant:    

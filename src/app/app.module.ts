@@ -7,6 +7,7 @@ import { LandingMainComponent } from './components/landing-main/landing-main.com
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './material/material.module';
 import { RestaurantCardComponent } from './components/restaurant-card/restaurant-card.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { RestaurantCardComponent } from './components/restaurant-card/restaurant
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MaterialModule
+    MaterialModule,
+    HttpClientModule
     
   ],
   providers: [],

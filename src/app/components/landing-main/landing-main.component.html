@@ -39,16 +39,16 @@
             </ol>
             <div class="carousel-inner w-100 text-left mt-5" role="listbox">
               <div class="carousel-item active  ">
-                <div class="restaurant-carousel-item row   ">
-                  <app-restaurant-card class=" col-md-3 col-sm-5 mb-3"></app-restaurant-card>
-                  <app-restaurant-card class=" col-md-3 col-sm-5 mb-3"></app-restaurant-card>
-                  <app-restaurant-card class=" col-md-3 col-sm-5 mb-3"></app-restaurant-card>
+                <div class="restaurant-carousel-item row " *ngIf="restaurants.length>0">
+                  <app-restaurant-card [restaurant]='restaurants[0]' class=" col-md-3 col-sm-5 mb-3"></app-restaurant-card>
+                  <app-restaurant-card [restaurant]='restaurants[1]' class=" col-md-3 col-sm-5 mb-3"></app-restaurant-card>
+                  <app-restaurant-card [restaurant]='restaurants[2]' class=" col-md-3 col-sm-5 mb-3"></app-restaurant-card>
                 </div>
               </div>
               <div class="carousel-item   ">
                 <div class="restaurant-carousel-item row  ">
-                  <app-restaurant-card class=" col-md-3 col-sm-5 mb-3"></app-restaurant-card>
-                  <app-restaurant-card class=" col-md-3 col-sm-5 mb-3"></app-restaurant-card>
+                  <app-restaurant-card [restaurant]='restaurants[3]' class=" col-md-3 col-sm-5 mb-3"></app-restaurant-card>
+                  <app-restaurant-card [restaurant]='restaurants[0]' class=" col-md-3 col-sm-5 mb-3"></app-restaurant-card>
 
                 </div>
               </div>
@@ -69,7 +69,7 @@
 
 
     </div>
-    <div class="jumbotron text-center top-dishes">
+    <div class="jumbotron text-center top-dishes shadow-lg">
       <h1 class="display-4 text-uppercase">Top 5 Dishes!</h1>
       <hr class="my-4 text">
       <div class="middle-container row justify-content-center">
