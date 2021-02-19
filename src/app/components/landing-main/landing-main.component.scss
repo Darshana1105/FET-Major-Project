@@ -1,7 +1,7 @@
-.container-fluid{
-    // background-color: whitesmoke;
+.main-div-home{
+    background-color: white;
     // height: 100vh;
-    // max-width: 1300px;
+    max-width: 1400px;
     position: relative;
     
 }
@@ -43,10 +43,12 @@ background-size: contain;
     background-size: contain;
     max-width: 1400px;
     margin: auto;
-    min-height: 100vh;
+    height: max-content;
+    min-height: 95vh;
   }
 
 .top-restaurants{
+  
       // background-color: rgba(255, 255, 255, 0.9);
       background: transparent;
       min-width: inherit;
@@ -107,19 +109,32 @@ ol.carousel-indicators > li{
 
 .top-dishes{
   background-color: white;
-  
+  background: url(../../../assets/images/background-top-dishes.jpg) no-repeat;
+  background-size: contain;
+  background-position: center;
   // color: white;
 }
-
-.example-card {
-    max-width: 300px;
+.middle-index{
+  background: url(../../../assets/images/background-wooden.jpg);
+  background-size: cover;
+  height: 90vh;
+}
+.top-food-card {
+    // max-width: 300px;
     margin: 3rem;
-    // border-radius: 10px;
+    background: rgba(255, 255, 255);
+    // border: transparent;
+    box-shadow: 0 0 0 ;
+    border-radius: 15px;
+    overflow: hidden;
    
   }
 
-  .dish-image{
+  .dish-image.mat-card-image{
     box-shadow: black;
+    // border-radius: 15px;
+    height: 25vh;
+    object-fit: cover;
   }
 
   .text{

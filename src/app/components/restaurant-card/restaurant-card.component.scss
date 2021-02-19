@@ -2,12 +2,14 @@
     padding: 0;
     line-height: initial;
     font-weight: initial;
+    width: 100%;
   }
   .restaurant-card {
-    // max-width: 350px;
-    min-height: max-content;
-    height: 53vh;
+    height: max-content;
+    min-height: 53vh;
+    width: 100%;
     overflow: hidden;
+
   }
   
   .restaurant-card img{
