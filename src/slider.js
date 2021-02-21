@@ -1,4 +1,4 @@
-$('#recipeCarousel').carousel('pause');
+$('#top-restaurant-carousel').carousel('pause');
 
 $(window).on('scroll',()=>{
     var scroll = $(window).scrollTop();

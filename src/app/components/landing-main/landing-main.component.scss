@@ -1,143 +1,93 @@
-.main-div-home{
-    background-color: white;
-    // height: 100vh;
-    max-width: 1400px;
-    position: relative;
-    
-}
-.home-nav{
-    position: sticky;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 100px;
-    background-color: rgb(244,67,54,0.8);
-    // background-color: rgb(0,0,0,0.7);
-    z-index: 5;
-    transition:height 0.5s  ;
-}
-
-.home-nav-scroll{
-  background-color: rgb(244,67,54);
-  height: 70px;
-}
-
-.inner{
+.main-div-home {
+  background-color: white;
+  // height: 100vh;
   position: relative;
-  top: -100px;
-  background-color: transparent;
-// background: rgba(255,255,255,1) url("/assets/images/fast_food-02-.jpg")  ;
-background-size: contain;
 
-}
-  .carousel-image{
-    height: 50vh;
-      width: 100%;
-      object-fit: cover;
-  }
-
-.inner-jumbotron{
-    color: rgb(244,67,54,0.8);
-    //  background: rgba(0,0,255,0.8)  ;
-    background: transparent;
+  .inner {
+    position: relative;
+    top: -100px;
+    background-color: transparent;
+    // background: rgba(255,255,255,1) url("/assets/images/fast_food-02-.jpg")  ;
     background-size: contain;
-    max-width: 1400px;
-    margin: auto;
-    height: max-content;
-    min-height: 95vh;
   }
-
-.top-restaurants{
-  
-      // background-color: rgba(255, 255, 255, 0.9);
-      background: transparent;
-      min-width: inherit;
-      min-height: inherit;
 }
 
-.card-clickable{
-  padding: 0;
-  line-height: initial;
-  font-weight: initial;
-}
-
-.restaurant-card {
-  // max-width: 350px;
-  height: 50vh;
-}
-
-.restaurant-card img{
-  height: 34vh;
-  // max-height: 250px;
+.carousel-image {
+  height: 70vh;
+  width: 100%;
   object-fit: cover;
 }
 
-.restaurant-carousel-item{
-  justify-content: space-evenly;
-  margin-bottom: 3rem;
-}
-ol.carousel-indicators > li{
-  background-color: rgb(244,67,54);
-}
-
-.rating{
-  color:orangered;
-}
-.heading-text{
-  font-family:monospace ;
-}
-
-.carousel-next-icon:after
-{
-  content: '>';
-  font-size: 40px;
-  color: rgb(244,67,54);
-}
-
-.carousel-prev-icon:after {
-  content: '<';
-  font-size: 40px;
-  color: rgb(244,67,54);
-}
-
-.food-card-image{
-    // height: 30vh;
-    width: 100%;
-    object-fit: cover;
-    background-image: url("../../../assets/images/pizza.jpg");
-}
-
-.top-dishes{
-  background-color: white;
-  background: url(../../../assets/images/background-top-dishes.jpg) no-repeat;
+.inner-jumbotron {
+  //  background: rgba(0,0,255,0.8)  ;
+  background: transparent;
   background-size: contain;
-  background-position: center;
-  // color: white;
+  max-width: 1440px;
+  margin: auto;
+  height: max-content;
+  min-height: 95vh;
+  .top-restaurants {
+    // background-color: rgba(255, 255, 255, 0.9);
+    background: transparent;
+    min-width: inherit;
+    min-height: inherit;
+    .restaurant-carousel-item {
+      justify-content: space-evenly;
+      margin-bottom: 3rem;
+      @media (min-width: 992px) {
+        .col-lg-4 {
+          flex: 0 0 30%;
+        }
+      }
+    }
+    ol.carousel-indicators > li {
+      background-color: rgb(244, 67, 54);
+    }
+    .carousel-next-icon:after {
+      content: ">";
+      font-size: 40px;
+      color: rgb(244, 67, 54);
+    }
+
+    .carousel-prev-icon:after {
+      content: "<";
+      font-size: 40px;
+      color: rgb(244, 67, 54);
+    }
+  }
 }
-.middle-index{
+
+.rating {
+  color: orangered;
+}
+.heading-text {
+  font-family: monospace;
+  color: rgb(244, 67, 54, 0.8);
+}
+
+.middle-index {
   background: url(../../../assets/images/background-wooden.jpg);
   background-size: cover;
   height: 90vh;
 }
-.top-food-card {
-    // max-width: 300px;
-    margin: 3rem;
-    background: rgba(255, 255, 255);
-    // border: transparent;
-    box-shadow: 0 0 0 ;
-    border-radius: 15px;
-    overflow: hidden;
-   
-  }
 
-  .dish-image.mat-card-image{
-    box-shadow: black;
-    // border-radius: 15px;
-    height: 25vh;
-    object-fit: cover;
-  }
+.food-card-image {
+  // height: 30vh;
+  width: 100%;
+  object-fit: cover;
+  background-image: url("../../../assets/images/pizza.jpg");
+}
 
-  .text{
-    background-color: white;
-    border-width: thin;
-  }
+.top-dishes {
+  background-color: white;
+  background: url(../../../assets/images/background-top-dishes.jpg) no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: inherit;
+  // color: white;
+}
+
+.text {
+  background-color: white;
+  border-width: thin;
+}

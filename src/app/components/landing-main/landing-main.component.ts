@@ -9,18 +9,30 @@ import { RestaurantService } from 'src/app/utilities/restaurant.service';
   styleUrls: ['./landing-main.component.scss']
 })
 export class LandingMainComponent implements OnInit {
-  restaurants:any;
-  constructor(private _restaurantService:RestaurantService) {this.restaurants=[] }
+  topRestaurants:any;
+  topFoods:any;
+
+  constructor(private _restaurantService:RestaurantService) {
+    this.topRestaurants=[]
+    this.topFoods=[]
+   }
 
   ngOnInit(): void {
-    this._restaurantService.getTopRestaurant().subscribe(data=>{
+    this._restaurantService.getTopRestaurants().subscribe(data=>{
       console.log(data);
       if(data!=undefined)
       {
-        this.restaurants=data;
-
+        this.topRestaurants=data;
+      }
+    });
+    this._restaurantService.getTopFoods().subscribe(data=>{
+      console.log(data);
+      
+      if(data!=undefined){
+        this.topFoods=data;
       }
     })
+
   }
 
 }
